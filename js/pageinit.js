@@ -1,5 +1,8 @@
 $(function() {
 
+
+
+
 $(":input").inputmask();
 $("#phone").inputmask({"mask": "+7 (999) 999-9999"});
 $("#phone1").inputmask({"mask": "+7 (999) 999-9999"});
@@ -232,19 +235,31 @@ $(window).resize(reviewsCarusel);
 //end reviews  
 
 //start sidebar
-    $('.js-sidebar-show').on('click', function(event) {
-        event.preventDefault();
-        showSidebar();
-    });
-    $('.js-sidebar-hide').on('click', function(event) {
-        event.preventDefault();
-        hideSidebar();
-    });
+
+$('.js-sidebar-show').click(function(event){
+             event.preventDefault();
+
+            if(!$(this).hasClass('active')) {
+               
+                showSidebar();
+
+            } else {
+              hideSidebar();
+            }
+        });
+
+
+ 
 
     function showSidebar() {
 
         $('.js-sidebar').addClass('l-sidebar--open');
         $('.js-sidebar-block').addClass('l-sidebar-block--open');
+            $('.menu__toggle').addClass('active');
+            $('.b-sandwich').addClass('js-sidebar-hide');
+            $('.b-sandwich').removeClass('js-sidebar-show');
+
+
 
         var tempWidth,
             tempWidthNew,
@@ -261,8 +276,14 @@ $(window).resize(reviewsCarusel);
     }
 
     function hideSidebar() {
+        console.log('111222');
+
         $('.js-sidebar').removeClass('l-sidebar--open');
         $('.js-sidebar-block').removeClass('l-sidebar-block--open');
+        $('.menu__toggle').removeClass('active');
+            $('.menu__toggle').removeClass('js-sidebar-hide');
+        $('.menu__toggle').addClass('js-sidebar-show');
+
 
         // scroll width compensation
         $('body').removeClass('g-ov-h');
@@ -321,6 +342,8 @@ $(window).resize(reviewsCarusel);
        to add border to right side
        of last tab */
     $('ul.tabs li').last().addClass("tab_last");
+
+
 
 
 $(document).ready(function() {
@@ -403,5 +426,8 @@ $(function(){
                 $(this).prop('placeholder', placeholder_mini_form);
             }
         );
+
+
+
 
 });
