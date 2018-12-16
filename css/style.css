@@ -140,6 +140,9 @@ a:hover {
     color: #b7bbca;
     font-size: 14px;
 }
+.b-path li:after {
+    display: none;
+}
 .b-path li:before {
     margin: -2px 5px 0 0;
     content: " / ";
@@ -1099,7 +1102,7 @@ a:hover[href^="mailto"] {
 .b-sevice li a:visited,
 .b-sevice li a:hover {
     font-size: 18px;
-    padding: 20px 17px 20px 17px;
+    padding: 20px 24px 20px 24px;
     display: inline-block; 
     color: #363946;
     text-decoration: none;
@@ -2190,7 +2193,7 @@ color: #444444;
     background: transparent;
     display: inline-block;
     font-size: 16px;
-    width: 200px;
+    width: auto;
     padding: 14px 20px 14px 20px;
     text-align: center;
     color: #cc3333;
@@ -2535,6 +2538,7 @@ content: "";
 .b-form--filter .form__button a:hover {
     background: #919299;
     color: #fff;
+    width: 100%;
     font-size: 14px;
     text-transform: none;
     padding: 16px 15px 16px 15px;
@@ -2723,7 +2727,7 @@ content: "";
 }
 /*------------------------*/
 .b-form--filter {  
-    margin: -28px -1000px 40px -1000px;
+    margin: -48px -1000px 40px -1000px;
     background: #ececec;
     padding: 15px 1000px 24px 1000px;   
 }
@@ -2906,7 +2910,9 @@ content: "";
     padding: 0 20px 20px 0;
     box-sizing: border-box;
 }
-
+.b-foot-menu ul li:after {
+    display: none;
+}
 .b-foot-menu .foot-menu__item {
     width: 26%;
     padding-right: 20px;
@@ -2996,8 +3002,6 @@ table th {
     font-family: 'Roboto Medium';
     font-weight: normal;
     border-bottom: 2px solid #e2e2e2;
-
-     
 }
 table th:first-child {
     background: #ffffff;
@@ -4720,10 +4724,10 @@ color: #fff;
         width: calc(100% / 2 - 30px);
     }
     .b-form--filter .form__col-1:nth-child(1) {
-        width: 39.5%;
+        width: 36.5%;
     }
     .b-form--filter .form__col-1:nth-child(2) {
-        width: 35.5%;
+        width: 37.5%;
         padding: 0;
     }
     .b-table table td {
