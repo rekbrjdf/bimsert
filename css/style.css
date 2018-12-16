@@ -89,10 +89,10 @@ h3 {
     font-weight: 500;
 }
 h4 {
-    font-size: 18px;
+    font-size: 30px;
     color: #22201e;
     text-align: left;
-    margin: 0 0 20px 0;
+    margin: 20px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     line-height: 1.4;
@@ -2053,7 +2053,7 @@ border-bottom: 1px solid #fff;
 .b-contact a:visited[href^="tel"],
 .b-contact a:hover[href^="tel"] {
     font-size: 24px;
-    text-decoration: none;
+    text-decoration: n
 }
 /*------------------------*/
 /*------------------------*/
