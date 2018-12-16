@@ -72,23 +72,6 @@ h1 {
     padding: 0 1000px 42px 1000px;   
 }
 h2 {
-    font-size: 40px;
-    color: #22201e;
-    margin: 0 auto 49px auto;
-    font-family: 'Roboto', sans-serif; 
-    font-weight: normal;
-    display: table; 
-    text-align: center; 
-    position: relative;
-} 
-h3 {
-    font-size: 34px;
-    color: #22201e;
-    margin: 0 0 40px 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-h4 {
     font-size: 30px;
     color: #22201e;
     text-align: left;
@@ -96,6 +79,21 @@ h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     line-height: 1.4;
+} 
+h3 {
+    font-size: 22px;
+    color: #22201e;
+    margin: 0 0 30px 0;
+    font-family: 'Roboto Light', sans-serif;
+    font-weight: 500;
+}
+h4 {
+    font-size: 18px;
+    color: #22201e;
+    text-align: left;
+    margin: 0 0 20px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 h5 {
     font-size: 18px;
@@ -177,7 +175,11 @@ a:hover {
     font-size: 18px;
     font-family: 'Roboto Light', sans-serif;
 }
-
+.l-main p {
+   line-height: 1.4;
+   font-size: 18px;
+   font-family: 'Roboto Light', sans-serif;
+}
 /*------------------------*/
 .b-pageline {
     margin-bottom: 70px;
@@ -266,12 +268,23 @@ ul {
     margin-bottom: 29px;
 }
 ol {
-    list-style: decimal outside none;
+    margin: 0 0 1em 17px;
+    padding: 0 0 0 0;
+    margin-bottom: 29px;
 }
 ul {
     list-style: none;
 }
-li {
+ol li {
+    position: relative;
+    margin: 0 0 7px;
+    /*padding-left: 17px; */
+    font-size: 18px;
+    line-height: 1.4;
+        font-family: 'Roboto Light', sans-serif;
+
+}
+ul li {
     position: relative;
     margin: 0 0 7px;
     padding-left: 17px;
@@ -2063,8 +2076,9 @@ border-bottom: 1px solid #fff;
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
-.b-form h3 {
+.b-form span {
     display: inline-block;
+    margin-bottom: 10px;
     vertical-align: bottom; 
 }
 .b-form .forms {
@@ -2089,11 +2103,8 @@ border-bottom: 1px solid #fff;
     width: 33.33%;
 }
 .b-form .form__col-1-5 {
-    width: 203px;
-}
-.b-form .form__col-1-7 {
-    width: calc(100% - 215px);
-}
+    width: 50%;
+} 
 .b-form input[type="text"],
 .b-form input[type="password"], 
 .b-form input[type="date"], 
@@ -2104,21 +2115,23 @@ border-bottom: 1px solid #fff;
 /*    -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;*/
-border: solid #fff;
-border-width: 1px;
--webkit-border-radius: 1px;
--moz-border-radius: 1px;
-border-radius: 1px;
+border: solid #dfdfdf;
+border-width: 1px; 
 margin: 0;
 padding: 12px 15px;
+
+width: 100%;
 display: block;
 background: #fff;
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
+font-family: 'Roboto Light', sans-serif;
+font-size: 18px;
 box-sizing: border-box;
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
-color: #000;
+color: #444444;
+}
+.b-form textarea {
+    min-height: 200px;
 }
 .b-form input[type="text"],
 .b-form input[type="password"], 
@@ -2171,25 +2184,29 @@ color: #000;
 .b-form .form__button a:active,
 .b-form .form__button a:visited,
 .b-form .form__button a:hover {
-    width: 100%;
-    padding: 13px 15px 14px 15px;
-    border: none;
-    letter-spacing: 1.5px;
-    background-color: #ffcf4f;
-    border: 2px solid #ffcf4f;
-    text-transform: uppercase;
-    outline: transparent;
-    font-size: 14px;
-    color: #000;
+    height: 50px;
+    transition: none;
+    border: 1px solid #f5d6d6;
+    background: transparent;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    padding: 14px 20px 14px 20px;
+    text-align: center;
+    color: #cc3333;
     text-decoration: none;
-    font-family: 'Roboto Semi Bold', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
+    font-weight: normal;
     box-sizing: border-box;
-    cursor: pointer;
+    position: relative;
 }
 .b-form .form__button button:hover,
 .b-form .form__button a:active,
 .b-form .form__button a:hover { 
-    background: #fff;
+    border: 1px solid #cc3333;
+    background: #cc3333;
+    color: #fff;
+ 
 }
 .b-form input[type="text"]::-webkit-input-placeholder,
 .b-form input[type="password"]::-webkit-input-placeholder,
@@ -2197,7 +2214,7 @@ color: #000;
 .b-form input[type="phone"]::-webkit-input-placeholder,
 .b-form input[type="number"]::-webkit-input-placeholder,
 .b-form textarea::-webkit-input-placeholder {
-    color: #4f4f4f;
+    color: #999999;
 }
 .b-form input[type="text"]:-moz-placeholder,
 .b-form input[type="password"]:-moz-placeholder,
@@ -2205,7 +2222,7 @@ color: #000;
 .b-form input[type="phone"]:-moz-placeholder,
 .b-form input[type="number"]:-moz-placeholder,
 .b-form textarea:-moz-placeholder {
-    color: #4f4f4f;
+    color: #999999;
     opacity: 1;
 }
 .b-form input[type="text"]::-moz-placeholder,
@@ -2214,7 +2231,7 @@ color: #000;
 .b-form input[type="phone"]::-moz-placeholder,
 .b-form input[type="number"]::-moz-placeholder,
 .b-form textarea::-moz-placeholder {
-    color: #4f4f4f;
+    color: #999999;
     opacity: 1;
 }
 .b-form input[type="text"]:-ms-input-placeholder,
@@ -2223,7 +2240,7 @@ color: #000;
 .b-form input[type="phone"]:-ms-input-placeholder,
 .b-form input[type="number"]:-ms-input-placeholder,
 .b-form textarea:-ms-input-placeholder {
-    color: #4f4f4f;
+    color: #999999;
 }
 input[type="text"]:focus::-webkit-input-placeholder { color:transparent; }
 input[type="text"]:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
@@ -2281,8 +2298,20 @@ input[type="phone"]:focus:-ms-input-placeholder { color:transparent; } /* IE 10+
     line-height: 1;
     display: none;
 }
+.b-form label span.fa-check:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../img/ok1.png) 50% 50% no-repeat;
+}
 .b-form .form__input--checkbox:hover .form__checkbox-trigger {
-    border-color: #c5c5c5;
+    border-color: #dfdfdf;
 }
 .b-form .form__input--checkbox .form__checkbox-label {
     margin-right: -.275em;
@@ -2291,8 +2320,8 @@ input[type="phone"]:focus:-ms-input-placeholder { color:transparent; } /* IE 10+
     width: calc(100% - 35px);
 }
 .b-form .form__input--checkbox input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger {
-    background: #ffffff;
-    border-color: #b0b0b0;
+    background: #363946;
+    border-color: #363946;
 }
 .b-form .form__input--checkbox input[type="checkbox"]:checked ~ .form__checkbox .form__checkbox-trigger span {
     display: block;
@@ -2362,7 +2391,7 @@ input[type="phone"]:focus:-ms-input-placeholder { color:transparent; } /* IE 10+
 }
 .b-form .form__input--file:hover label span,
 .b-form .form__input--file-hashover label span {
-    border-color: #c5c5c5;
+    border-color: #dfdfdf;
     cursor: pointer;
 }
 .b-form .form__input--file:focus label span,
@@ -2426,14 +2455,6 @@ input[type="phone"]:focus:-ms-input-placeholder { color:transparent; } /* IE 10+
     padding-bottom: 17px;
     margin-bottom: 20px;
 }
-.b-form--one h3 {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 380px;
-    text-align: left;
-    padding-right: 6%;
-    color: #fff;
-}
 .b-form--one span {
     display: none;
 }
@@ -2444,7 +2465,7 @@ input[type="phone"]:focus:-ms-input-placeholder { color:transparent; } /* IE 10+
 .b-form--one input[type="number"], 
 .b-form--one textarea, 
 .b-form--one select { 
-    border: solid #fff;
+    border: solid #dfdfdf;
 }
 .b-form--one .form__button {
     padding-top: 0;
@@ -2452,113 +2473,7 @@ input[type="phone"]:focus:-ms-input-placeholder { color:transparent; } /* IE 10+
 .b-form--one .form__wrap {
     display: inline-block;
     vertical-align: top;
-    padding: 10px 0;
-    width: calc(100% - 455px);
-}
-.b-form--one .last {
-    width: 27%;
-}
-.b-form--two {
-    padding-bottom: 17px;
-    margin-bottom: 20px;
-}
-.b-form--two h3 {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 380px;
-    padding-right: 6%;
-    color: #000;
-}
-.b-form--two span {
-    display: none;
-}
-.b-form--two .form__wrap {
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px 0;
-    width: calc(100% - 455px);
-}
-.b-form--two input[type="text"],
-.b-form--two  input[type="password"], 
-.b-form--two  input[type="date"], 
-.b-form--two  input[type="phone"], 
-.b-form--two  input[type="number"], 
-.b-form--two  textarea, 
-.b-form--two  select { 
-    border: 1px solid #b0b0b0;
-}
-.b-form--two .form__button {
-    padding-top: 0;
-}
-.b-form--reg {
-    height: auto;
-    color: #000;
-}
-.b-form--reg .form__wrap {
-    margin-bottom: 55px;
-}
-.l-reg .b-form--reg  {
-    height: auto;
-}
-.b-form--reg [class^="form__col-"] {
-    padding: 8px 10px;
-}
-.b-form--reg label span {
-    display: none;
-}
-.b-form--reg label span.fa-check {
-    display: block;
-}
-.b-form--reg label span.fa-check:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    content: "";
-    width: 11px;
-    height: 11px;
-    background:  url(../img/ok.png) 50% 50% no-repeat;
-}
-.b-form--reg .form__button button, 
-.b-form--reg .form__button a:link,
-.b-form--reg .form__button a:active,
-.b-form--reg .form__button a:visited,
-.b-form--reg .form__button a:hover {
-    width: auto;
-    letter-spacing: 1px;
-    padding: 13px 33px 14px 33px;
-}
-.b-form--box {
-    max-width: 517px; 
-    box-sizing: border-box;
-    text-align: center;
-    height: auto;
-}
-.b-form--box .form__wrap {
-    padding: 0 40px;
-}
-.b-form--box .form__title {
-    text-align: center;
-    font-size: 34px;
-    color: #22201e;
-    margin: 10px -20px 25px -20px;
-    padding: 0 20px 10px 20px;
-    border-bottom: 1px solid #e1e1e1;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-.b-form--box .form__info {
-    text-align: center;
-    font-size: 16px;
-    color: #4f4f4f;
-    margin: 0 20px 20px 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-}
-.b-form--box .form__button {
-    padding-top: 0;
+    padding: 10px 0; 
 }
 .fancybox-active {
     height: inherit;
@@ -2582,141 +2497,7 @@ input[type="phone"]:focus:-ms-input-placeholder { color:transparent; } /* IE 10+
     width: auto;
     letter-spacing: 1px;
     padding: 13px 50px 14px;
-}
-.b-form--calculator {
-    overflow: hidden;
-    display: block;
-    box-shadow: 0 3px 18px rgba(76, 76, 76, 0.2);
-
-    border-radius: 10px;
-    border: 1px solid #e1e1e1;
-    margin: 0 -10px;
-    margin-bottom: 150px;
-    padding: 0;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: left;
-    justify-content: left;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap; 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.b-form--calculator .form--calculator__item { 
-    padding: 55px 30px 30px 30px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-    /*overflow: hidden;*/
-    width: calc(100% - 400px);  
-    box-sizing: border-box;
-}
-.b-form--calculator .form--calculator__item:first-child {
-    width: 400px;
-    padding: 30px;
-    padding-bottom: 100px;
-    border-right: 1px solid #e1e1e1;
-}
-.b-form--calculator .form--calculator__title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 21px;
-    text-align: left;
-    margin-bottom: 44px;
-}
-.b-form--calculator .form__col-1 {
-    width: 100%;
-    padding: 8px 10px 18px 10px;
-}
-.b-form--calculator .form__price-info a:link, 
-.b-form--calculator .form__price-info a:active, 
-.b-form--calculator .form__price-info a:visited, 
-.b-form--calculator .form__price-info a:hover {
-    font-size: 14px
-}
-.b-form--calculator form span { 
-    display: block;
-    float: left;
-    vertical-align: top;
-    width: 310px;
-    font-size: 16px;
-    line-height: 1.2;
-    color: #4f4f4f;
-    padding-top: 6px;
-    padding-right: 20px;
-    box-sizing: border-box;
-}
-.b-form--calculator .form__input {
-    display: inline-block;
-    width: calc(100% - 310px);
-    overflow: hidden;
-}
-.b-form--calculator .form__price {
-    background: #fcfcfc;
-    border: 1px solid #e1e1e1;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 22px;
-
-}
-.b-form--calculator .form__price span {
-    font-size: 45px;
-    color: #c6c6c6;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    width: 100%;
-    vertical-align: middle;
-    text-align: right;
-    padding: 12px 15px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-.b-form--calculator .form__price-info {
-    display: none;
-}
-.b-form--calculator .form__end .form__price-info {
-    display: block;
-    text-align: right;
-    padding: 0 15px 5px 15px;
-    width: 100%;
-    box-sizing: border-box;
-}
-.b-form--calculator .form__price-info ins {
-    padding-right: 14px;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: sub;
-    z-index: 22;
-}
-.b-form--calculator .form__price-info:hover ins:after,
-.b-form--calculator .form__price-info ins:hover:after {
-    bottom: -18px;
-    left: -10px;
-    border: solid transparent;
-    content: " ";
-    height: 16px;
-    width: 30px;
-    background: url(../img/ar-info.png) no-repeat;
-    position: absolute;
-    pointer-events: none;
-    display: block; 
-}
-
-.b-form--calculator .form__end .form__price span {
-    font-size: 45px;
-    color: #737373;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    padding: 0 15px 0 15px;
-    margin-bottom: -7px;
-    text-align: right;
-}
-.b-form--calculator .form__price-info p {
-    display: none;
-}
+} 
 /*.b-form--calculator .form__price-info p:after {
 position: absolute;
 top: -2px;
@@ -2739,7 +2520,7 @@ content: "";
     background: #fff;
     z-index: 11;
     margin: 0;
-    color: #4f4f4f;
+    color: #999999;
     box-shadow: 0 -1px 18px rgba(76, 76, 76, 0.3);
 } 
 .b-form--calculator .form__toggle {
@@ -2890,7 +2671,7 @@ content: "";
     background: #f5f5f5;
     padding: 14px 5px;
     font-size: 15px;
-    color: #4f4f4f; 
+    color: #999999; 
     display: block;
 }
 .b-form--calculator input[type=radio] {
@@ -2938,7 +2719,7 @@ content: "";
     padding: 0 5px;
 }
 .b-form--calculator .form__input--checkbox {
-    color: #4f4f4f;
+    color: #999999;
 }
 /*------------------------*/
 .b-form--filter {  
@@ -3002,7 +2783,7 @@ content: "";
     right: -28px;
     width: 16px;
     height: 1px;
-    background: #4f4f4f;
+    background: #999999;
     content: "";
 }
 .b-form--filter .from__wrapinput-col .from__input-left {
@@ -3099,7 +2880,7 @@ content: "";
 }
 /*------------------------*/
 .b-calculator .calculator__info {
-    color: #4f4f4f;
+    color: #999999;
     font-size: 18px;
     text-align: center;
     margin: 0 100px;
@@ -3201,6 +2982,47 @@ padding-top: 20px;
 
 }
 /*------------------------*/
+table {
+    background: #ffffff;
+     
+    font-size: 18px; 
+    width: 100%;
+    border-collapse: collapse; 
+} 
+table th {
+    padding: 20px 30px; 
+    text-align: left;
+    color: #444444;
+    font-family: 'Roboto Medium';
+    font-weight: normal;
+    border-bottom: 2px solid #e2e2e2;
+
+     
+}
+table th:first-child {
+    background: #ffffff;
+    text-align: left; 
+     padding-left: 0; 
+
+}
+
+ table tr:nth-child(1) td { 
+    background: #ffffff;
+   
+} 
+table td {
+    padding: 20px 30px; 
+    box-sizing: border-box;
+    text-align: left;
+    color: #444444;
+    font-family: 'Roboto Light', sans-serif;
+    border-bottom: 1px solid #e2e2e2;
+     
+}
+table td:first-child { 
+    text-align: left; 
+    padding-left: 0; 
+} 
 /*------------------*/
 .b-table table {
     background: #ffffff;
@@ -4097,7 +3919,7 @@ color: #fff;
 .b-faq .faq__item a:visited,
 .b-faq .faq__item a:active,
 .b-faq .faq__item a:hover {
-    color: #4f4f4f;
+    color: #999999;
     line-height: 1.4;
     text-decoration: none;
 }
@@ -4216,7 +4038,7 @@ color: #fff;
 .b-document .document__text p {
     line-height: 1.6;
     font-size: 19px;
-    color: #4f4f4f;
+    color: #999999;
     margin: 0 0 30px 0;
 }
 .b-document .document__info {
@@ -4255,7 +4077,7 @@ color: #fff;
 .b-document .document__item a:visited,
 .b-document .document__item a:active,
 .b-document .document__item a:hover {
-    color: #4f4f4f;
+    color: #999999;
     line-height: 1.4;
     display: block;
     width: 100%;
