@@ -270,6 +270,11 @@ ul {
     padding: 0 0 0 0;
     margin-bottom: 29px;
 }
+ul ul {
+    margin: 0 0  0 20px;
+    padding: 0 0 0 0;
+    margin-bottom: 15px;
+}
 ol {
     margin: 0 0 1em 17px;
     padding: 0 0 0 0;
@@ -2993,7 +2998,8 @@ table {
      
     font-size: 18px; 
     width: 100%;
-    border-collapse: collapse; 
+    border-collapse: collapse;
+    margin-bottom: 30px;
 } 
 table th {
     padding: 20px 30px; 
@@ -3026,7 +3032,13 @@ table td {
 table td:first-child { 
     text-align: left; 
     padding-left: 0; 
-} 
+}
+table.b-border-table  th,
+table.b-border-table  td {
+    padding: 20px 20px;
+    border: 1px solid #e2e2e2;
+     
+}
 /*------------------*/
 .b-table table {
     background: #ffffff;
@@ -3320,8 +3332,15 @@ body.g-ov-h {
     margin: 0;
     padding: 0;
 }
+.b-sidebar-menu ul li {
+    margin: 0;
+    padding-left: 0;
+    }
 .b-sidebar-menu li {
     display: block;
+}
+.b-sidebar-menu li:after {
+    display: none;
 }
 .b-sidebar-menu a:link,
 .b-sidebar-menu a:active,
@@ -3449,6 +3468,41 @@ body.g-ov-h {
     color: #92949f !important;
 }
 /*-------------------------------------*/
+/*------------------------*/
+    .b-mobile-table {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        overflow-x: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .b-mobile-table,
+    .b-mobile-table-flip tbody {
+        -webkit-overflow-scrolling: touch;
+        background: -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+        background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+        background-size: 10px 100%, 10px 100%;
+        background-attachment: scroll, scroll;
+        background-repeat: no-repeat;
+    }
+    .b-mobile-table td:first-child {
+        background-image: -webkit-linear-gradient(left, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-repeat: no-repeat;
+        background-size: 20px 100%;
+    }
+    .b-mobile-table td:last-child {
+        background-image: -webkit-linear-gradient(right, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: 20px 100%;
+    }
+    .b-mobile-table th {
+        background: #fff;
+    }
+
 /*------------------------*/
 .b-slider-main {
     overflow: hidden;
