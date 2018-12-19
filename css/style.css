@@ -3493,11 +3493,11 @@ body.g-ov-h {
         background-size: 20px 100%;
     }
     .b-mobile-table td:last-child {
-        background-image: -webkit-linear-gradient(right, white 50%, rgba(255, 255, 255, 0) 100%);
+       /* background-image: -webkit-linear-gradient(right, white 50%, rgba(255, 255, 255, 0) 100%);
         background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
         background-repeat: no-repeat;
         background-position: 100% 0;
-        background-size: 20px 100%;
+        background-size: 20px 100%;*/
     }
     .b-mobile-table th {
         background: #fff;
