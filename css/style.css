@@ -1573,7 +1573,7 @@ z-index: 2;*/
 
 }
 .b-category-5page {
-    margin-top: -29px;
+    margin-top: -50px;
     margin-bottom: -20px;
 
 
@@ -3468,40 +3468,7 @@ body.g-ov-h {
     color: #92949f !important;
 }
 /*-------------------------------------*/
-/*------------------------*/
-    .b-mobile-table {
-        display: inline-block;
-        vertical-align: top;
-        max-width: 100%;
-        overflow-x: auto;
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    .b-mobile-table,
-    .b-mobile-table-flip tbody {
-        -webkit-overflow-scrolling: touch;
-        background: -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
-        background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
-        background-size: 10px 100%, 10px 100%;
-        background-attachment: scroll, scroll;
-        background-repeat: no-repeat;
-    }
-    .b-mobile-table td:first-child {
-        background-image: -webkit-linear-gradient(left, white 50%, rgba(255, 255, 255, 0) 100%);
-        background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
-        background-repeat: no-repeat;
-        background-size: 20px 100%;
-    }
-    .b-mobile-table td:last-child {
-       /* background-image: -webkit-linear-gradient(right, white 50%, rgba(255, 255, 255, 0) 100%);
-        background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
-        background-repeat: no-repeat;
-        background-position: 100% 0;
-        background-size: 20px 100%;*/
-    }
-    .b-mobile-table th {
-        background: #fff;
-    }
+
 
 /*------------------------*/
 .b-slider-main {
@@ -4476,7 +4443,7 @@ color: #fff;
         vertical-align: middle;
     }
     .b-category-5page {
-        margin-top: -29px;
+        margin-top: -50px;
         margin-bottom: 0;
     }
     .b-category-5page .category__item .category__imgbox { 
@@ -4788,9 +4755,76 @@ color: #fff;
         padding: 33px 10px;
         box-sizing: border-box
     }
+    /*------------------------*/
+    .b-mobile-table {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        overflow-x: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .b-mobile-table,
+    .b-mobile-table-flip tbody {
+        -webkit-overflow-scrolling: touch;
+        background: -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+        background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+        background-size: 10px 100%, 10px 100%;
+        background-attachment: scroll, scroll;
+        background-repeat: no-repeat;
+    }
+    .b-mobile-table td:first-child {
+        background-image: -webkit-linear-gradient(left, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-repeat: no-repeat;
+        background-size: 20px 100%;
+    }
+    .b-mobile-table td:last-child {
+       /* background-image: -webkit-linear-gradient(right, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: 20px 100%;*/
+    }
+    .b-mobile-table th {
+        background: #fff;
+    }
 }
 /*------------------------*/
 @media handheld, only screen and (max-width: 767px) {
+        .b-mobile-table {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        overflow-x: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .b-mobile-table,
+    .b-mobile-table-flip tbody {
+        -webkit-overflow-scrolling: touch;
+        background: -webkit-radial-gradient(left ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, -webkit-radial-gradient(right ellipse, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+        background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
+        background-size: 10px 100%, 10px 100%;
+        background-attachment: scroll, scroll;
+        background-repeat: no-repeat;
+    }
+    .b-mobile-table td:first-child {
+        background-image: -webkit-linear-gradient(left, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-repeat: no-repeat;
+        background-size: 20px 100%;
+    }
+    .b-mobile-table td:last-child {
+       /* background-image: -webkit-linear-gradient(right, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-image: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0) 100%);
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+        background-size: 20px 100%;*/
+    }
+    .b-mobile-table th {
+        background: #fff;
+    }
     h2 {
         font-size: 24px;
     }
@@ -5404,14 +5438,7 @@ color: #fff;
     }
     .b-category-5page {
         margin: 0 -20px;
-        margin-top: -29px;
-        margin-bottom: -20px;
-
-
-
-    }
-    .b-category-5page {
-        margin-top: -29px;
+        margin-top: -50px;  
         margin-bottom: 0;
         padding-bottom: 0;
     }
